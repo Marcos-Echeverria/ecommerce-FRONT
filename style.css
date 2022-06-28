@@ -129,7 +129,7 @@ img{
     .nav__menu{
         position: fixed;
         top: var(--header-height);
-        left: 0;
+        left: -100%;
         width: 70%;
         height: 100vh;
         padding: 2rem;
@@ -150,3 +150,22 @@ img{
     font-size: 1.3rem;
     cursor: pointer;
 }
+
+.show{
+    left: 0;
+}
+
+.active{
+    position: relative;   
+}
+
+.active::before{
+    content: "";
+    position: absolute;
+    bottom: -.5rem;
+    left: 45%;
+    width: 4px;
+    height: 4px;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+} 
