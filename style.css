@@ -170,7 +170,7 @@ img{
     border-radius: 50%;
 } 
 
-scroll-header{
+.scroll-header{
     background-color: var(--withe-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 
@@ -206,7 +206,7 @@ scroll-header{
     transform: var(--rotate-img);
 }
 
-home__new{
+.home__new{
     display: block;
     font-size: var(--smaller-font-size);
     font-weight: var(--font-semi-bold);
@@ -221,4 +221,18 @@ home__new{
 .home__description{
     margin-bottom: var(--mb-6);
     
+}
+
+.button{
+    display: inline-block;
+    background-color: var(--dark-color);
+    color: var(--withe-color);
+    padding: 1.125rem 2rem;
+    font-weight: var(--font-medium);
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+button:hover{
+    transform: translateY(-.25rem);
 }
