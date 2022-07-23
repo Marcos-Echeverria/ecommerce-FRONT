@@ -76,8 +76,9 @@ img{
 }
 
 .section{
-    padding: 5rem 0 2rem;
+    padding: 3rem 0 2rem;
 }
+
 
 .section-tittle{
     position: relative;
@@ -297,7 +298,7 @@ button:hover{
 .sneaker__name, .sneaker__price{
     font-size: var(--mb-2);
     letter-spacing: .1rem;
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--font-bold);
 }
 
 .sneaker__name{
@@ -325,6 +326,7 @@ button:hover{
     padding: 2rem;
     border: .5rem;
     transition: .3s;
+    margin-top: 2rem;
 }
 
 .collection__data{
@@ -349,4 +351,9 @@ button:hover{
 
 .collection__card:hover{
     transform: translateY(-.5rem);
+}
+
+.women__container{
+    row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
