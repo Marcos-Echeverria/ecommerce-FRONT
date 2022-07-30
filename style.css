@@ -485,3 +485,47 @@ button:hover{
     font-size: var(--normal-font-size);
     font-weight: var(--font-semi-bold);
 }
+
+.footer__container{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.footer__fox{
+    margin-bottom: var(--mb-4);
+}
+
+.footer_tittle{
+    font-size: var(--big-font-size);
+}
+
+.footer__link{
+    display: block;
+    width: max-content;
+    margin-bottom: var(--mb-1);
+}
+
+.footer__social{
+    font-size: 1.5rem;
+    margin-right: 1.25rem;
+}
+
+.footer__copy{
+    padding-top: 3rem;
+    font-size: var(--smaller-font-size);
+    color: var(--dark-color-light);
+    text-align: center;
+}
+
+.sneaker__pages{
+    margin-top: var(--mb-6);
+}
+
+.sneaker__pag{
+    padding: .5rem 1rem;
+    border: 1px solid var(--dark-color);
+}
+
+.sneaker__pag:hover{
+    background-color: var(--dark-color);
+    color: var(--withe-color);
+}
