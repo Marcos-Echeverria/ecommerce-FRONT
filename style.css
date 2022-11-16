@@ -76,7 +76,7 @@ img{
 }
 
 .section{
-    padding: 3rem 0 2rem;
+    padding: 5rem 0 2rem;
 }
 
 
@@ -85,11 +85,11 @@ img{
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-4);
     text-align: center;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
 }
 
 .section-tittle::after{
-    content: " ";
+    content: '';
     position: absolute;
     width: 56px;
     height: .18rem;
@@ -101,7 +101,7 @@ img{
 }
 
 .bd-grid{
-    max-width: 1024;
+    max-width: 1024px;
     display: grid;
     grid-template-columns: 100%;
     column-gap: 2rem;
@@ -232,8 +232,12 @@ img{
     font-weight: var(--font-medium);
     border-radius: .5rem;
     transition: .3s;
+    user-select: none;
 }
 
+.button:hover {
+    transform: translateY(-0.6rem);
+  }
 
 .buttom-light{
     display: inline-flex;
@@ -246,18 +250,14 @@ img{
 .buttom-icon{
     font-size: 1.5rem;
     margin-left: var(--mb-1);
-    transition: .3s;
+    transition: 0.45s;
 }
 
 
 .buttom-light:hover .buttom-icon{
-    transform: translateX(.25rem);
+    transform: translateX(0.25rem);
 }
 
-
-button:hover{
-    transform: translateY(-.25rem);
-}
 
 .featured__container{
     row-gap: 2rem;
@@ -271,20 +271,20 @@ button:hover{
     align-items: center;
     padding: 2rem;
     background-color: var(--dark-color-lighten);
-    border-radius: .5rem;
-    transition: .3s;
+    border-radius: 0.5rem;
+    transition: 0.3s;
 }
 
 .sneaker__sale{
     position: absolute;
-    left: .5rem;
+    left: 0.5rem;
     background-color: var(--dark-color);
     color: var(--withe-color);
-    padding: .25rem .5rem;
-    border-radius: .25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
     font-size: var(--mb-2);
     transform: rotate(-90deg);
-    letter-spacing: .1rem;
+    letter-spacing: 0.2rem;
 }
 
 .sneaker__img{
@@ -297,7 +297,7 @@ button:hover{
 
 .sneaker__name, .sneaker__price{
     font-size: var(--mb-2);
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     font-weight: var(--font-bold);
 }
 
@@ -310,7 +310,11 @@ button:hover{
 }
 
 .sneaker:hover{
-    transform: translateY(-.5rem);
+    transform: translateY(-0.5rem);
+}
+
+.collection{
+    display: flex;
 }
 
 .collection__container{
@@ -324,9 +328,9 @@ button:hover{
     height: 328px;
     background-color: var(--dark-color-lighten);
     padding: 2rem;
-    border: .5rem;
-    transition: .3s;
-    margin-top: 2rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    /* margin-top: 2rem; */
 }
 
 .collection__data{
@@ -342,7 +346,7 @@ button:hover{
 
 .collection__name{
     font-size: var(--bigger-font-size);
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
 }
 
 .collection__description{
@@ -362,7 +366,7 @@ button:hover{
     grid-template-columns: 55% 45%;
     column-gap: 0;
     background-color: var(--dark-color-lighten);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     justify-content: center;
 }
 
@@ -372,7 +376,7 @@ button:hover{
 
 .offer__tittle{
     font-size: var(--biggest-font-size);
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
 }
 
 .offer__description{
@@ -380,7 +384,7 @@ button:hover{
 }
 
 .offer__img{
-    width: 123px;
+    width: 153px;
 }
 
 .new__container{
@@ -392,7 +396,7 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     background-color: var(--dark-color-lighten);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     padding: 2rem;
 }
 
@@ -403,7 +407,7 @@ button:hover{
 
 .new__tittle{
     font-size: var(--bigger-font-size);
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
 }
 
 .new__price{
@@ -421,8 +425,9 @@ button:hover{
     position: relative;
     padding: 3.5rem 1.5rem;
     background-color: var(--dark-color-lighten);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     overflow: hidden;
+    display: flex;
     justify-content: center;
 }
 
@@ -450,8 +455,8 @@ button:hover{
 .newsletter__container{
     background-color: var(--dark-color);
     color: var(--withe-color);
-    padding: 2rem .5rem;
-    border-radius: .5rem;
+    padding: 2rem 0.5rem;
+    border-radius: 0.5rem;
     text-align: center;
 }
 
@@ -466,10 +471,10 @@ button:hover{
 
 .newsletter__subscribe{
     display: flex;
-    column-gap: .5rem;
+    column-gap: 0.5rem;
     background-color: var(--withe-color);
-    padding: .5rem;
-    border-radius: .5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .newsletter__input{
@@ -515,145 +520,158 @@ button:hover{
     color: var(--dark-color-light);
     text-align: center;
 }
+.sneaker__page {
+    margin-top: var(--mb-6);
+    margin-bottom: var(--mb-3);
+  }
+  
+.sneaker__pag {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--dark-color);
+  }
 
+  
 .sneaker__pages{
     margin-top: var(--mb-6);
     display: -webkit-inline-box;
 }
 
 .sneaker__pag{
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     border: 1px solid var(--dark-color);
 }
 
 .sneaker__pag:hover{
     background-color: var(--dark-color);
     color: var(--withe-color);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-@media screen and (min-width: 576px){
-    .collection__container{
-        grid-template-columns: 415px;
+@media screen and (min-width: 576px) {
+    .collection__container {
+      grid-template-columns: 415px;
     }
-
-    .collection__img{
-        width: 260px;
+  
+    .collection__img {
+      width: 260px;
     }
-
-    .offer__container{
-        grid-template-columns: max-content max-content;
+  
+    .offer__container {
+      grid-template-columns: max-content max-content;
     }
-
-    .offer__data{
-        text-align: center;
+  
+    .offer__data {
+      text-align: center;
     }
-
-    .new__mens{
-        align-items: center;
+  
+    .new__mens {
+      align-items: center;
     }
-
-
-}
-
-@media screen and (min-width: 768px){
-    body{
-        margin: 0;
+  }
+  
+  @media screen and (min-width: 768px) {
+    body {
+      margin: 0;
     }
-    
-    .section{
-        padding: .7rem 0 3rem;
+  
+    .section {
+      padding: 7rem 0 3rem;
     }
-
-    .section-tittle::after{
-        width: 76px;
+  
+    .section-title::after {
+      width: 76px;
     }
-
-    .nav{
-        height: calc(var(--header-height) +3.5rem);
+  
+    .nav {
+      height: calc(var(--header-height) + 1.5rem);
     }
-
-    .nav__menu{
-        margin-left: auto;
+  
+    .nav__menu {
+      margin-left: auto;
     }
-
-    .nav__list{
-        display: flex;
+  
+    .nav__list {
+      display: flex;
     }
-
-    .nav__item{
-        margin-left: var(--mb-6);
-        margin-bottom: 0;
+  
+    .nav__item {
+      margin-left: var(--mb-6);
+      margin-bottom: 0;
     }
-
-    .nav__toggle{
-        display: none;
+  
+    .nav__toggle {
+      display: none;
     }
-
-    .home__container{
-        height: 100vh;
-        grid-template-columns: max-content max-content;
-        justify-content: center;
-        align-items: center;
+  
+    .home__container {
+      height: 100vh;
+      grid-template-columns: max-content max-content;
+      justify-content: center;
+      align-items: center;
     }
-
-    .home__sneaker{
-        order: 1;
+  
+    .home__sneaker {
+      order: 1;
     }
-
-    .home__shape{
-        width: 376px;
-        height: 376px;
+  
+    .home__shape {
+      width: 376px;
+      height: 376px;
     }
-
-    .home__img{
-        width: 470px;
-        top: 3.5rem;
-        right: 0;
-        left: -3rem;
+  
+    .home__img {
+      width: 476px;
+      top: 3.5rem;
+      right: 0;
+      left: -3rem;
     }
-
-    .newsletter__container{
-        grid-template-columns: max-content max-content;
-        justify-content: center;
-        align-items: center;
-        padding: 4.5rem 2rem;
-        column-gap: 3rem;
+  
+    .newsletter__container {
+      grid-template-columns: max-content max-content;
+      justify-content: center;
+      align-items: center;
+      padding: 4.5rem 2rem;
+      column-gap: 3rem;
     }
-
-    .newsletter__description{
-        margin-bottom: 0;
+  
+    .newsletter__description {
+      margin-bottom: 0;
     }
-
-    .newsletter__description{
-        height: max-content;
-        width: 360px;
+  
+    .newsletter__subscribe {
+      width: 360px;
+      height: max-content;
     }
-}
-
-@media screen and (min-width: 1024px){
-    .bd-grid{
-        margin-left: auto;
-        margin-right: auto;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .bd-grid {
+      margin-left: auto;
+      margin-right: auto;
     }
-
-    .home__container{
-        column-gap: 8rem;
+  
+    .home__container {
+      column-gap: 8rem;
     }
-    .collection__container{
-        grid-template-columns: repeat(2, 415px);    
+  
+    .collection__container {
+      grid-template-columns: repeat(2, 415px);
     }
-
-    .new__container{
-        grid-template-columns: max-content 1fr;
+  
+    .new__container {
+      grid-template-columns: min-content;
+      justify-content: center;
     }
-
-    .new__mens{
-        align-items: initial;
-        justify-content: flex-end;
-        padding: 4rem 2rem ;
+  
+    .new__mens {
+      align-items: initial;
+      justify-content: flex-end;
+      padding: 2rem 4rem;
     }
-
-    .new__mens-img{
-        margin-bottom: var(--mb-6);
+  
+    .new__mens-img {
+      margin-bottom: var(--mb-6);
     }
-}
+  }
+  
